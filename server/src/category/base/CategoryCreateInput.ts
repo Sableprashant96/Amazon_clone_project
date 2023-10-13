@@ -26,7 +26,7 @@ class CategoryCreateInput {
   name!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: () => ProductCreateNestedManyWithoutCategoriesInput,
   })
   @ValidateNested()

@@ -42,7 +42,7 @@ class Category {
   name!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: () => [Product],
   })
   @ValidateNested()
